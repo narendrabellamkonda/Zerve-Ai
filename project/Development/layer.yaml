@@ -1,0 +1,248 @@
+id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+name: Development
+type: 1
+canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+blocks:
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: Trains Gradient Boosting and Random Forest models to identify behavioral
+    patterns predictive of long-term user success, comparing performance via 5-fold
+    cross-validation
+  height: 1000
+  id: 0fda8bcf-3cc1-41b9-9903-e6ffd4259aa1
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: predictive_model_training
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 5600
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: Creates box plots, effect size chart, and distribution histograms comparing
+    successful vs unsuccessful user behavioral patterns across key engagement metrics
+  height: 1000
+  id: 22bb30ca-9928-42e1-9783-37b5119fdc61
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: behavioral_visualizations
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 4200
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: Categorizes users by retention patterns, engagement depth, credit usage,
+    session quality, and activity intensity to identify user segments.
+  height: 1000
+  id: 36d7adfd-b651-44f4-9bfc-c2fdf5720a6e
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: retention_analysis
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 0
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: 'Creates 4 model performance visualizations: feature importance comparison,
+    composite feature ranking with impact directions, ROC curves, and cross-validation
+    metrics for GB and RF models'
+  height: 1000
+  id: 48a147c4-9c8f-4095-9085-4f1f4a66ad59
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: model_visualizations
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 5600
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: 'Extracts six user engagement metrics from event data: total events,
+    unique event types, session duration, credit usage, active days, and events-per-day
+    ratio'
+  height: 1000
+  id: 598577a6-1543-4bcf-a9da-a0cb792300b1
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: feature_engineering
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 0
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: Compares behavioral metrics between successful and unsuccessful users
+    using statistical tests and effect sizes to identify key discriminating patterns
+  height: 1000
+  id: 5b9779b1-a245-484c-84bc-b97526baece7
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: behavioral_segment_comparison
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 4200
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: Validates success metrics via correlation, t-tests, class balance analysis,
+    and distribution checks with effect sizes
+  height: 1000
+  id: 709bcebb-a709-430a-a1e9-aff2794bacd4
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: statistical_validation
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 2800
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: Summarizes key findings on user success, presents prioritized product
+    recommendations with 5-tier strategy, and creates impact/effort matrix for roadmap
+    planning
+  height: 1000
+  id: 98adead6-b3be-496e-934c-80b37e959f1d
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: executive_insights_summary
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 7000
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: Analyzes feature importance using permutation importance and correlation-based
+    methods to rank predictive behaviors for long-term user success
+  height: 1000
+  id: bbd76c9b-8727-42f4-8201-f84a230a4b53
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: shap_analysis
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 5600
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: Defines binary and continuous success metrics for users based on retention,
+    engagement depth, activity volume, and session quality thresholds
+  height: 1000
+  id: bdc49d3a-3363-435d-9bc2-82c563dce92b
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: success_metric_definition
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 1400
+- auto_size: false
+  canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  compute_settings: null
+  description: 'Creates 3 dashboard charts visualizing user success metrics: binary
+    success distribution, continuous success score histogram, and individual success
+    criteria component breakdown'
+  height: 1000
+  id: df9b9dad-6d76-4938-ab5e-5e3111ea579b
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  name: success_metric_visualizations
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 1400
+edges:
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: 44a0ca11-6842-462c-9707-3e744ffa4aeb
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: bdc49d3a-3363-435d-9bc2-82c563dce92b
+  target: 0fda8bcf-3cc1-41b9-9903-e6ffd4259aa1
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: 4db35a24-1a06-43b1-9289-d62a5156b7a4
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: 5b9779b1-a245-484c-84bc-b97526baece7
+  target: 22bb30ca-9928-42e1-9783-37b5119fdc61
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: 78f4e29b-4ff4-49a4-bda0-293418322113
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: bdc49d3a-3363-435d-9bc2-82c563dce92b
+  target: 5b9779b1-a245-484c-84bc-b97526baece7
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: 7bf6aac3-401e-4bb4-bb09-8268901c3466
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: bdc49d3a-3363-435d-9bc2-82c563dce92b
+  target: df9b9dad-6d76-4938-ab5e-5e3111ea579b
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: 81584836-6010-4eb6-9e8d-42976ed86e08
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: 598577a6-1543-4bcf-a9da-a0cb792300b1
+  target: 36d7adfd-b651-44f4-9bfc-c2fdf5720a6e
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: 91dae81e-a575-40ac-b69a-431277b8e55d
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: bdc49d3a-3363-435d-9bc2-82c563dce92b
+  target: 709bcebb-a709-430a-a1e9-aff2794bacd4
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: e26f9225-69ab-4bfa-9730-fa8dc83f56b8
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: bbd76c9b-8727-42f4-8201-f84a230a4b53
+  target: 48a147c4-9c8f-4095-9085-4f1f4a66ad59
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: eb6b9b47-e3a8-4749-a484-6674bac717ea
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: bbd76c9b-8727-42f4-8201-f84a230a4b53
+  target: 98adead6-b3be-496e-934c-80b37e959f1d
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: f8398fec-b3e0-4462-82eb-8f770744b76f
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: 598577a6-1543-4bcf-a9da-a0cb792300b1
+  target: bdc49d3a-3363-435d-9bc2-82c563dce92b
+- canvas_id: 5b675879-b1ce-4d54-92d7-c27710cbaed9
+  id: fdbbbac6-94fe-4e2e-9c08-97aeff64a7e0
+  layer_id: 555cdbb9-8d33-42e5-92ff-800a8794d19d
+  source: 0fda8bcf-3cc1-41b9-9903-e6ffd4259aa1
+  target: bbd76c9b-8727-42f4-8201-f84a230a4b53
